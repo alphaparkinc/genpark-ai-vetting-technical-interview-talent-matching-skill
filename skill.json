@@ -1,0 +1,38 @@
+{
+  "name": "genpark-ai-vetting-technical-interview-talent-matching-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - AI technical interview vetting platform assessing live coding, system design, and GitHub history for elite engineering talent matching.",
+  "author": "genpark",
+  "category": "hr-talent",
+  "tags": [
+    "talent-vetting",
+    "ai-interviews",
+    "technical-screening",
+    "talent-matching",
+    "mercor"
+  ],
+  "inputs": {
+    "candidate_resume_uri": {
+      "type": "string"
+    },
+    "job_role_requirements": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "vetting_session_id": {
+      "type": "string"
+    },
+    "live_coding_ai_interview_score_pct": {
+      "type": "number"
+    },
+    "system_design_competency_tier": {
+      "type": "string"
+    },
+    "talent_placement_match_status": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
